@@ -8,6 +8,8 @@ cd docs/.vuepress/dist
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 git init
+git config --global user.email "littlegrayss@gmail.com"
+git config --global user.name "littlegrayss"
 git add -A
 git commit -m 'deploy'
 # 如果发布到 https://<USERNAME>.github.io
