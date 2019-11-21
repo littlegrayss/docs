@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy": "gh-pages -d docs/.vuepress/dist",
+    "deploy:build": "npm run docs:build && gh-pages -d docs/.vuepress/dist"
   },
   "repository": {
     "type": "git",
@@ -17,10 +19,11 @@
   "bugs": {
     "url": "https://github.com/littlegrayss/docs/issues"
   },
-  "homepage": "https://github.com/littlegrayss/docs#readme",
+  "homepage": "https://littlegrayss.github.io/docs",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.2.0",
     "@vuepress/plugin-nprogress": "^1.2.0",
+    "gh-pages": "^2.1.1",
     "vuepress": "^1.2.0"
   }
 }
