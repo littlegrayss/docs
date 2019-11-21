@@ -1,5 +1,6 @@
+var env = process.argv[4];
 module.exports = {
-  base: '/docs/',
+  base: env == 'netlify' ? '' :'/docs/',
   title: 'littlegrayss ',
   description: 'Just playing around',
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
