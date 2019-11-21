@@ -10,30 +10,45 @@ module.exports = {
         items: [
           { text: '技术积累', link: '/accumulate/' },
           { text: '生活感悟', link: '/lifeThinking/' },
-          { text: '翻译', link: '/translation/' },
-          
+          { text: '翻译', link: '/translation/' }
         ]
       },
-      { text: '博客', link: 'http://www.littlegrayss.com' }
+      // { text: '博客', link: 'http://www.littlegrayss.com' }
     ],
     sidebar: {
       '/accumulate/': [
-        
+        '',
         {
-          path: '/', // accumulate文件夹的README.md 不是下拉框形式
-          title: '技术积累',
+          title: 'js',
           children: [
-            ['', 'a title'],
-            '/accumulate/js/base64',
+            '/accumulate/js/base64'
+          ]
+        },
+        {
+          title: 'css',
+          children: [
+            '/accumulate/css/需求',
+            '/accumulate/css/网站解析'
+          ]
+        },
+        {
+          title: 'DevOps',
+          children: [
+            '/accumulate/DevOps/cdn'
           ]
         }
       ],
-      '/lifeThinking/': [],
-      '/translation/': []
+      '/translation/OpenCV/': [{
+        title: '目录',
+        children: [
+          'chapter1'
+        ]
+      }]
     },
     sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
     lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间
     smoothScroll: true
   },
+  configureWebpack: {},
   plugins: ['@vuepress/back-to-top', '@vuepress/nprogress']
 }
