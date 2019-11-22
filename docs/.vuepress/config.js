@@ -1,6 +1,5 @@
 var env = process.argv[4];
 module.exports = {
-  permalink: "/:year/:month/:day/:slug",
   base: env == 'netlify' ? '' :'/docs/',
   title: 'littlegrayss ',
   description: 'Just playing around',
