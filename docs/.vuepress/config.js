@@ -1,5 +1,6 @@
 var env = process.argv[4];
 module.exports = {
+  permalink: "/:year/:month/:day/:slug",
   base: env == 'netlify' ? '' :'/docs/',
   title: 'littlegrayss ',
   description: 'Just playing around',
@@ -36,12 +37,20 @@ module.exports = {
         {
           title: 'DevOps',
           children: [
-            '/accumulate/DevOps/cdn'
+            '/accumulate/DevOps/cdn',
+            '/accumulate/DevOps/静态网站部署'
+          ]
+        },
+        {
+          title: 'engineering',
+          children: [
+            '/accumulate/engineering/git'
           ]
         }
       ],
       '/translation/OpenCV/': [{
         title: '目录',
+        collapsable: false,
         children: [
           'chapter1'
         ]
