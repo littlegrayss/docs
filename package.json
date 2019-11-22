@@ -8,8 +8,7 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "deploy": "gh-pages -d docs/.vuepress/dist",
-    "deploy:build": "npm run docs:build && gh-pages -d docs/.vuepress/dist",
-    "deploy:netlify": "npm run docs:build netlify && npm run deploy:build"
+    "deploy:build": "npm run docs:build && gh-pages -d docs/.vuepress/dist"
   },
   "repository": {
     "type": "git",
