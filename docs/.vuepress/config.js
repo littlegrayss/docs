@@ -43,7 +43,8 @@ module.exports = {
         {
           title: 'engineering',
           children: [
-            '/accumulate/engineering/git'
+            '/accumulate/engineering/git',
+            '/accumulate/engineering/workflow'
           ]
         }
       ],
