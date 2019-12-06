@@ -29,14 +29,14 @@ module.exports = {
         {
           title: 'css',
           children: [
-            '/accumulate/css/网站解析'
+            '/accumulate/css/website-analyze'
           ]
         },
         {
           title: 'DevOps',
           children: [
             '/accumulate/DevOps/cdn',
-            '/accumulate/DevOps/静态网站部署'
+            '/accumulate/DevOps/static-webpage-deploy'
           ]
         },
         {
@@ -44,6 +44,12 @@ module.exports = {
           children: [
             '/accumulate/engineering/git',
             '/accumulate/engineering/workflow'
+          ]
+        },
+        {
+          title: 'demo',
+          children: [
+            '/demo/qiniu-upload-chrome-extension'
           ]
         }
       ],
