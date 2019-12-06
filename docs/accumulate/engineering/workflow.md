@@ -1,4 +1,4 @@
-## git
+## workflow
 scene:
 > 1. 一般每个人同一时间只负责一个需求，总有例外
 >    突然接到bug修复，或者更紧急的需求，但是正在开发一个需求时
@@ -13,11 +13,14 @@ scene:
 
 ### commit messages rules
 查看gitlab上的commit记录很费劲，要看哪些是新功能，哪些是修复
+
 目前团队是根据一个需求所有改动进行commit的，[缺点]
+
 建议每个功能点都commit一次，[优点]
 
 Conventional Commits 约定式提交规范
 > 它提供了一组用于创建清晰的提交历史的简单规则
+
 messages格式：
 ```
 <类型>[可选的作用域]: <描述>
@@ -27,6 +30,7 @@ messages格式：
 <BLANK LINE>
 <footer>
 ```
+
 #### type
 ```
 # 主要type
@@ -98,6 +102,7 @@ vscode插件：`Visual Studio Code Commitizen Support`
 用于记录发布版本的节点。
 
 本身是对某次提交打上一个标签，实际上是指向特定提交对象的引用。可以帮助我们快速定位到某个版本，如果该版本出现问题可以快速修复。
+
 用法：
 `git tag v1.0.1`
 `git tag v1.1.0 d7f80sd7`
