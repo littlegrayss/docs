@@ -10,6 +10,11 @@
     "deploy": "gh-pages -d docs/.vuepress/dist",
     "deploy:build": "npm run docs:build && gh-pages -d docs/.vuepress/dist"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run deploy:build"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/littlegrayss/docs.git"
@@ -24,6 +29,7 @@
     "@vuepress/plugin-back-to-top": "^1.2.0",
     "@vuepress/plugin-nprogress": "^1.2.0",
     "gh-pages": "^2.1.1",
+    "husky": "^3.1.0",
     "vuepress": "^1.2.0"
   }
 }
