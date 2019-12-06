@@ -1,17 +1,16 @@
-## workflow
+# workflow
 scene:
 > 1. 一般每个人同一时间只负责一个需求，总有例外
 >    突然接到bug修复，或者更紧急的需求，但是正在开发一个需求时
 > 2. 已经迭代过好几个版本了，但是前几个版本的代码有问题，一时之间找不出原因要马上回滚
 > 3. ...
 
-### work-flow
+## Branch Management
 - git-flow
 - github flow
 - gitlab-flow
-#### branch management
 
-### commit messages rules
+## Commit Messages Rules
 查看gitlab上的commit记录很费劲，要看哪些是新功能，哪些是修复
 
 目前团队是根据一个需求所有改动进行commit的，[缺点]
@@ -84,7 +83,7 @@ npm i commitizen cz-conventional-changelog --save-dev
 vscode插件：`Visual Studio Code Commitizen Support`
 
 
-### Version Number
+## Version Number
 ```
 主版本号.子版本号.修订版本号
 ```
@@ -108,7 +107,7 @@ vscode插件：`Visual Studio Code Commitizen Support`
 `git tag v1.1.0 d7f80sd7`
 `git checkout -b bugfix-1.3.4 v1.3.4`
 
-### changelog
+## Changelog
 commit messages & version number
 
 能够生成清晰的提交改动日志，方便查看每次版本的更新内容
