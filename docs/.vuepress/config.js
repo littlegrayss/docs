@@ -49,7 +49,7 @@ module.exports = {
         {
           title: 'demo',
           children: [
-            '/demo/qiniu-upload-chrome-extension'
+            '/accumulate/demo/qiniu-upload-chrome-extensions'
           ]
         }
       ],
