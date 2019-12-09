@@ -65,5 +65,11 @@ module.exports = {
     lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间
     smoothScroll: true
   },
-  plugins: ['@vuepress/back-to-top', '@vuepress/nprogress']
+  plugins: [
+    '@vuepress/back-to-top',
+    '@vuepress/nprogress',
+    ['@vuepress/google-analytics', {
+      'ga': 'UA-129343486-2'
+    }]
+  ]
 }
