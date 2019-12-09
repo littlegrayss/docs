@@ -23,13 +23,8 @@ module.exports = {
         {
           title: 'js',
           children: [
-            '/accumulate/js/base64'
-          ]
-        },
-        {
-          title: 'css',
-          children: [
-            '/accumulate/css/website-analyze'
+            '/accumulate/js/base64',
+            '/accumulate/js/whiteboard-coding'
           ]
         },
         {
@@ -43,7 +38,8 @@ module.exports = {
           title: 'engineering',
           children: [
             '/accumulate/engineering/git',
-            '/accumulate/engineering/workflow'
+            '/accumulate/engineering/workflow',
+            '/accumulate/engineering/web-component'
           ]
         },
         {
