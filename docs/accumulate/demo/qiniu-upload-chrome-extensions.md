@@ -22,12 +22,12 @@
 
 ![](http://img.littlegrayss.com/5o12rfi6o8)
 
-## 上传
+### 上传
 点击上传按钮，上传成功后可手动复制或点击复制
 
 ![](http://img.littlegrayss.com/h71mx3xaq4)
 
-## 浏览历史
+### 浏览历史
 点击历史按钮，弹出历史上传记录
 
 ![](http://img.littlegrayss.com/4ecui6e1a6)

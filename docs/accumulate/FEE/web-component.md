@@ -1,3 +1,6 @@
+---
+sidebar: auto
+---
 # web component
 
 ## 先聊点别的
@@ -32,7 +35,7 @@
 
 - 自己写
 
-```
+```html
 <!DOTYPE html>
 <html>
 	<head>
@@ -61,7 +64,7 @@
 </html>
 ```
 
-```
+```js
 class Pagination {
     constructor(options) {
         const DEFAULT_CURRENT_PAGE = 1;
@@ -87,8 +90,8 @@ class Pagination {
 
 - vue
 
-```
-// XlPagination.vue
+```html
+<!-- XlPagination.vue -->
 <template>
   <div :class="[className]" v-show='visible'>
     <a @click='prev' :class="is-disabled" v-html='prevName'></a>
@@ -148,7 +151,7 @@ export default {
 ### Custom Elements
 自定义html标签
 
-```
+```js
 // pagination.js
 class Pagination extends HTMLElement {
   constructor() {
@@ -159,9 +162,10 @@ class Pagination extends HTMLElement {
 
 customElements.define('pagination', Pagination);
 ```
+
 共有两种 custom elements：
-- Autonomous custom elements 是独立的元素，它不继承其他内建的HTML元素。你可以直接把它们写成HTML标签的形式，来在页面上使用。例如 <popup-info>，或者是document.createElement("popup-info")这样。
-- Customized built-in elements 继承自基本的HTML元素。在创建时，你必须指定所需扩展的元素（正如上面例子所示），使用时，需要先写出基本的元素标签，并通过 is 属性指定custom element的名称。例如<p is="word-count">, 或者 document.createElement("p", { is: "word-count" })。
+- Autonomous custom elements 是独立的元素，它不继承其他内建的HTML元素。你可以直接把它们写成HTML标签的形式，来在页面上使用。例如 `<popup-info>`，或者是document.createElement("popup-info")这样。
+- Customized built-in elements 继承自基本的HTML元素。在创建时，你必须指定所需扩展的元素（正如上面例子所示），使用时，需要先写出基本的元素标签，并通过 is 属性指定custom element的名称。例如`<p is="word-count">`, 或者 document.createElement("p", { is: "word-count" })。
 
 生命周期：
 - connectedCallback：当custom element首次被插入文档DOM时，被调用
@@ -178,9 +182,9 @@ document.body.appendChild(xFoo);
 ```
 
 ### Html Templates
-<template>
+`<template>`
 
-```
+```html
 // pagination.html
 <template id="pagination-template">
 	<style>
@@ -199,14 +203,14 @@ document.body.appendChild(xFoo);
 <script src="/pagination/pagination.js"></script>
 ```
 
-```
-// index.html
+``` html
+<!--index.html -->
 <pagination page=1 size=7></pagination>
 ```
 
 ### Shadow DOM
 封装DOM和CSS
-```
+```js
 // pagination.js
 	connectedCallback() {
 	  const shadowRoot = this.attachShadow({mode: 'open'});
@@ -220,7 +224,7 @@ document.body.appendChild(xFoo);
 ```
 
 ### HTML Imports
-```
+```html
 <link rel="import" href="./pagination.html">
 ```
 ## 兼容

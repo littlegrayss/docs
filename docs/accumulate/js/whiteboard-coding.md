@@ -14,7 +14,7 @@ xhr.send(null);
 ```
 
 ## 快排
-```
+```js
 function quickSort(arr, left, right) {
     if (left>right) return;
     let mid = partition(arr, left, right);
@@ -40,7 +40,7 @@ function partition(arr, left, right) {
 ```
 
 ## 防抖
-```
+```js
 function debouce(fn,delay){
     let timer;
     clearTimeout(timer);
@@ -52,7 +52,7 @@ function debouce(fn,delay){
 }
 ```
 ## 节流
-```
+```js
 function thro(fn, time) {
     let lastTime = 0;
     let now = new Date();
@@ -74,7 +74,7 @@ function thro(fn, time) {
 ## dom深度遍历
 ## 深拷贝
 ## 数组求最大值最小值
-```
+```js
 	Math.max(x[,a,b,c...]) x => 必须number类型
 	数组？ var arr = [6, 4, 1, 8, 2, 11, 23]
 1. Math.max.apply(null, arr)
@@ -89,7 +89,7 @@ function thro(fn, time) {
 ## 数组扁平化   
  [1, [2, [3, 4]]] => [1,2,3,4]
 1. 递归
-```
+```js
 function flatten(arr) {
 		var result = [];
 		arr.forEach(item => {
@@ -99,13 +99,13 @@ function flatten(arr) {
 } 
 ```
 2. toString
-```
+```js
 function flatten(arr) { 
 		return arr.toString(arr).split(',').map(item => +item)
 }
 ```
 3. reduce
-```
+```js
 function flatten(arr) {
 		arr.reduce((prev, next) => {
 			return previous.concat([].isArray(next) ? flatten(next) : next)
@@ -113,7 +113,7 @@ function flatten(arr) {
 } 
 ```
 4. ES6
-```
+```js
 [].concat(...arr)
 function flatten(arr) {
 		while(arr.some(item => [].isArray(item))) {
@@ -124,7 +124,7 @@ function flatten(arr) {
 ```
 ## 数组去重
 1.
-```
+```js
 function union(arr) {
 		return Array.from(new Set(arr));
 }
@@ -136,7 +136,7 @@ _.union(arr) {
 ## new的实现
 New的特点：
 * new 运算符创建一个用户定义的对象类型的实例或具有构造函数的内置对象类型之一
-```
+```js
 function newFnc () {
 		let obj = new Object();
 		Constructor = [].shift.call(arguments);

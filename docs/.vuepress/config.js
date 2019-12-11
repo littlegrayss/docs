@@ -35,11 +35,11 @@ module.exports = {
           ]
         },
         {
-          title: 'engineering',
+          title: 'FEE',
           children: [
-            '/accumulate/engineering/git',
-            '/accumulate/engineering/workflow',
-            '/accumulate/engineering/web-component'
+            '/accumulate/FEE/git',
+            '/accumulate/FEE/workflow',
+            '/accumulate/FEE/web-component'
           ]
         },
         {
@@ -57,7 +57,7 @@ module.exports = {
         ]
       }]
     },
-    sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
+    sidebarDepth: 3, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
     lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间
     smoothScroll: true
   },
@@ -66,6 +66,22 @@ module.exports = {
     '@vuepress/nprogress',
     ['@vuepress/google-analytics', {
       'ga': 'UA-129343486-2'
-    }]
+    }],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'right',
+        defaultTitle: '',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'theorem',
+        before: info => `<div class="theorem"><p class='title'>${info}</p>`,
+        after: '</div>',
+        defaultTitle: '',
+      }
+    ],
   ]
 }
