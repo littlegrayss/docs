@@ -48,7 +48,7 @@ Support branches? []
 Version tag prefix? []
 Hooks and filters directory? [D:/code/practice/workflow-example/.git/hooks]
 ```
-![](http://img.littlegrayss.com/mpxaur63n4)
+![](http://img.littlegrayss.com/mpxaur63n4){.zoom-img}
 ### 功能开发
 开发新功能的时候，需要创建一个功能分支。
 
@@ -68,7 +68,7 @@ Now, start committing on your feature. When done, use:
      git flow feature finish feature-docs-init
 ```
 
-![](http://img.littlegrayss.com/c0gyaosl1i)
+![](http://img.littlegrayss.com/c0gyaosl1i){.zoom-img}
 
 可以用`git branch -a`查看一下该工程的分支及目前所在分支。
 ```bash
@@ -113,7 +113,7 @@ Follow-up actions:
      git flow release finish '1.1.0'
 ```
 
-![](http://img.littlegrayss.com/6fyqqqlfq2)
+![](http://img.littlegrayss.com/6fyqqqlfq2){.zoom-img}
 
 一般到了这个阶段是可以交付给测试做上线前最后的测试，即预发布测试。
 
@@ -183,7 +183,7 @@ Follow-up actions:
      git flow hotfix finish '1.1.1'
 
 ```
-![](http://img.littlegrayss.com/sc76lwx0nu)
+![](http://img.littlegrayss.com/sc76lwx0nu){.zoom-img}
 
 把错误修复完成后结束hotfix分支，会分别合并到master和develop分支，并回到develop分支。
 ```bash
@@ -218,21 +218,22 @@ Summary of actions:
 ```
 
 ### 分支示意图
-![](http://img.littlegrayss.com/h4e32n2ys)
+![](http://img.littlegrayss.com/h4e32n2ys){.zoom-img}
 
-![](http://img.littlegrayss.com/qkcvqz4df)
+![](http://img.littlegrayss.com/qkcvqz4df){.zoom-img}
 
 ### 优缺点
 #### 优点
 - 单个功能独立开发，并行开发不受影响
 - 修复快速，不受正在开发的功能影响
-- 
 
 #### 缺点
 - 复杂，分支繁多
 - 对开发者要求高（理解工作流，熟悉Git命令）
 
+::: tip
 支持Git Flow的图形化工具 - SourceTree
+:::
 
 ::: warning
 git flow在Windows运行特别慢，详情可以参考：[all commands are taking lot of time](https://github.com/nvie/gitflow/issues/6384)、[Speed issues on Windows](https://github.com/petervanderdoes/gitflow-avh/issues/52)

@@ -10,7 +10,7 @@ module.exports = {
       {
         text: '文章',
         items: [
-          { text: '技术积累', link: '/accumulate/' },
+          { text: '技术积累', link: '/accumulation/' },
           { text: '生活感悟', link: '/lifeThinking/' },
           { text: '翻译', link: '/translation/' }
         ]
@@ -18,34 +18,34 @@ module.exports = {
       // { text: '博客', link: 'http://www.littlegrayss.com' }
     ],
     sidebar: {
-      '/accumulate/': [
+      '/accumulation/': [
         '',
         {
           title: 'js',
           children: [
-            '/accumulate/js/base64',
-            '/accumulate/js/whiteboard-coding'
+            '/accumulation/js/base64',
+            '/accumulation/js/whiteboard-coding'
           ]
         },
         {
           title: 'DevOps',
           children: [
-            '/accumulate/DevOps/cdn',
-            '/accumulate/DevOps/static-webpage-deploy'
+            '/accumulation/DevOps/cdn',
+            '/accumulation/DevOps/static-webpage-deploy'
           ]
         },
         {
           title: 'FEE',
           children: [
-            '/accumulate/FEE/git',
-            '/accumulate/FEE/workflow',
-            '/accumulate/FEE/web-component'
+            '/accumulation/FEE/git',
+            '/accumulation/FEE/workflow',
+            '/accumulation/FEE/web-component'
           ]
         },
         {
           title: 'demo',
           children: [
-            '/accumulate/demo/qiniu-upload-chrome-extensions'
+            '/accumulation/demo/qiniu-upload-chrome-extensions'
           ]
         }
       ],
@@ -83,5 +83,28 @@ module.exports = {
         defaultTitle: '',
       }
     ],
-  ]
+    // ['@vuepress/medium-zoom', {
+    //   selector: '.zoom-img',
+    //   delay: 300,
+    //   options: {
+    //     margin: 48,
+    //     background: '#fff',
+    //     scrollOffset: 0,
+    //   },
+    // }],
+    [
+      'vuepress-plugin-zooming',
+      {
+        selector: '.zoom-img',
+        scaleBase: 1.4,
+        customSize: null
+      },
+    ],
+  ],
+  markdown: {
+    extendMarkdown: md => {
+      // 使用更多的 markdown-it 插件!
+      md.use(require('markdown-it-attrs'))
+    }
+  }
 }
