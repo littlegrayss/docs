@@ -176,7 +176,7 @@ customElements.define('pagination', Pagination);
 - `<x-foo></x-foo>`
 - `var xFoo = document.createElement('x-foo');`
 -   
-```
+```js
 var xFoo = new XFoo();
 document.body.appendChild(xFoo);
 ```

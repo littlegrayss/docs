@@ -6,3 +6,31 @@ hey friends, welcome!
 [lifeThinking](/lifeThinking/)
 
 [translation](/translation/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© 2019 littlegrayss [粤ICP备18034445号](http://www.beian.miit.gov.cn)

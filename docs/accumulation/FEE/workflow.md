@@ -10,9 +10,9 @@ scene:
 
 ## Branch Management
 ### 分类
-- git-flow
+- git flow
 - github flow
-- gitlab-flow
+- gitlab flow
 
 **git-flow**
 > 使用既定策略区分和管理开发、测试、生产环境的代码版本，对测试与持续集成友好，与敏捷、迭代的思路一致。
@@ -224,6 +224,7 @@ Summary of actions:
 
 ### 优缺点
 #### 优点
+- 规范化分支管理，减少
 - 单个功能独立开发，并行开发不受影响
 - 修复快速，不受正在开发的功能影响
 
