@@ -38,6 +38,7 @@ module.exports = {
           title: 'FEE',
           children: [
             '/accumulation/FEE/git',
+            '/accumulation/FEE/git-internals',
             '/accumulation/FEE/workflow',
             '/accumulation/FEE/web-component'
           ]
