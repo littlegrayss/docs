@@ -10,6 +10,7 @@
 
 ## FEE
 - [Git](/accumulation/FEE/git/)
+- [Git internals](/accumulation/FEE/git-internals/)
 - [workflow](/accumulation/FEE/workflow/)
 - [web component](/accumulation/FEE/web-component/)
 
