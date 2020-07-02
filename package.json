@@ -26,14 +26,14 @@
   },
   "homepage": "https://littlegrayss.github.io/docs",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.2.0",
-    "@vuepress/plugin-google-analytics": "^1.2.0",
-    "@vuepress/plugin-medium-zoom": "^1.2.0",
-    "@vuepress/plugin-nprogress": "^1.2.0",
-    "gh-pages": "^2.1.1",
+    "@vuepress/plugin-back-to-top": "^1.5.2",
+    "@vuepress/plugin-google-analytics": "^1.5.2",
+    "@vuepress/plugin-medium-zoom": "^1.5.2",
+    "@vuepress/plugin-nprogress": "^1.5.2",
+    "gh-pages": "^2.2.0",
     "husky": "^3.1.0",
-    "markdown-it-attrs": "^3.0.1",
-    "vuepress": "^1.2.0",
+    "markdown-it-attrs": "^3.0.3",
+    "vuepress": "^1.5.2",
     "vuepress-plugin-zooming": "^1.1.7"
   },
   "dependencies": {}
