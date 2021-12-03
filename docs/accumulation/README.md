@@ -14,5 +14,7 @@
 - [workflow](/accumulation/FEE/workflow/)
 - [web component](/accumulation/FEE/web-component/)
 
+# MiniProgram
+- [Technology Architecture](/mini-program/Technology-Architecture)
 ## demo
 - [七牛云图床上传插件](/accumulation/demo/qiniu-upload-chrome-extensions/)
