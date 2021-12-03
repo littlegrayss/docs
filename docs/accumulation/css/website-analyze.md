@@ -84,7 +84,7 @@
     border-radius: 24px;
 ```
 借个地方：
-检测用户系统主题是深色还是浅色（mac，ios）
+检测用户系统主题是深色还是浅色（mac，ios）:
 ``` css
 prefers-color-scheme: no-preference | light | dark
 @media (prefers-color-scheme: light) {
